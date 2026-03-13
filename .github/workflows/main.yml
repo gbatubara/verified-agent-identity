@@ -6,7 +6,7 @@ on:
       agent_name:
         description: 'gbatubara'
         required: true
-        default: 'finder'
+        default: 'gbatubara'
       agent_description:
         description: 'gbatubara'
         required: true
@@ -30,8 +30,8 @@ jobs:
 
       - name: Install script dependencies
         run: |
-          cd scripts
-          npm install
+          cd scripts
+          npm install
 
       - name: Step 2 - Create new Ethereum Identity
         run: node scripts/createNewEthereumIdentity.js
