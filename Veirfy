@@ -6,7 +6,7 @@ on:
       agent_name:
         description: 'gbatubara'
         required: true
-        default: 'finder'
+        default: 'gbatubara'
       agent_description:
         description: 'gbatubara'
         required: true
