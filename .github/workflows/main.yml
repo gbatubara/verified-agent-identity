@@ -38,8 +38,7 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         env:
-          AGENT_NAME: ${{ inputs.agent_name }}
-          AGENT_DESC: ${{ inputs.agent_description }}
+          CHALLENGE: '{"name": "gbatubara", "description": "gbatubara AI Agent"}'
         run: |
           node scripts/manualLinkHumanToAgent.js \
-            --challenge "{\"name\": \"$AGENT_NAME\", \"description\": \"$AGENT_DESC\"}"
+            --challenge "$CHALLENGE"
