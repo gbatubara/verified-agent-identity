@@ -41,4 +41,4 @@ jobs:
           CHALLENGE: '{"name": "gbatubara", "description": "gbatubara AI Agent"}'
         run: |
           node scripts/manualLinkHumanToAgent.js \
-            --challenge "$CHALLENGE"
+            --challenge '{"name": "gbatubara", "description": "gbatubara AI Agent"}'
